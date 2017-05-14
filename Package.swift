@@ -1,5 +1,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "CFontConfig"
+    name: "CFontConfig",
+    pkgConfig: "fontconfig",
+    providers: [.Brew("fontconfig"), .Apt("fontconfig")]
 )
